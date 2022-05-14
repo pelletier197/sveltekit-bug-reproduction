@@ -1,0 +1,1 @@
+This is a simple project used to report bug on svelte-kit.
