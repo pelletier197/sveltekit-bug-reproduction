@@ -9,6 +9,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		paths: {
+			// Try commenting this, you'll notice that HTML files are generated for `index.html`
 			base: '/api/docs'
 		},
 		prerender: {
