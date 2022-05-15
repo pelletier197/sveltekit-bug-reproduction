@@ -1,10 +1,10 @@
 <script context="module" lang="ts">
-	import type { LoadInput, LoadOutput } from '@sveltejs/kit';
-
-	export function load({ stuff }: LoadInput): LoadOutput {
-		return {
-			status: 302,
-			redirect: '/introduction/welcome'
-		};
-	}
+  import type { LoadOutput } from "@sveltejs/kit";
+  import { base } from "$app/paths";
+  export function load(): LoadOutput {
+    return {
+      status: 302,
+      redirect: `${base}/introduction/welcome`,
+    };
+  }
 </script>
